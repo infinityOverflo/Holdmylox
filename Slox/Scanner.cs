@@ -47,8 +47,20 @@ namespace CraftingInterpreters.Lox
                 case '+': AddToken(Plus); break;
                 case ';': AddToken(Semicolon); break;
                 case '*': AddToken(Star); break;
+                case '!': AddToken(Match('=') ? BangEqual : Bang); break;
+                case '=': AddToken(Match('=') ? EqualEqual : Equal); break;
+                case '<': AddToken(Match('=') ? LessEqual : Less); break;
+                case '>': AddToken(Match('=') ? GreaterEqual : Greater); break;
                 default: Lox.Error(_line, "Unexpected character."); break;
             }
+        }
+        private bool Match(char expected)
+        {
+            if (IsAtEnd()) return false;
+            if (_source[_current] != expected) return false;
+
+            _current++;
+            return true;
         }
         private bool IsAtEnd()
         {
