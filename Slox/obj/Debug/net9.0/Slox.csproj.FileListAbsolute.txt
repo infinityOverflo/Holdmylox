@@ -1,0 +1,15 @@
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\bin\Debug\net9.0\Slox.exe
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\bin\Debug\net9.0\Slox.deps.json
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\bin\Debug\net9.0\Slox.runtimeconfig.json
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\bin\Debug\net9.0\Slox.dll
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\bin\Debug\net9.0\Slox.pdb
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\Slox.GeneratedMSBuildEditorConfig.editorconfig
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\Slox.AssemblyInfoInputs.cache
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\Slox.AssemblyInfo.cs
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\Slox.csproj.CoreCompileInputs.cache
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\Slox.sourcelink.json
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\Slox.dll
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\refint\Slox.dll
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\Slox.pdb
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\Slox.genruntimeconfig.cache
+d:\Coding Projects\HoldmyloX\Holdmylox\Slox\obj\Debug\net9.0\ref\Slox.dll
