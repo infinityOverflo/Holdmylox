@@ -1,3 +1,6 @@
 {
-    "dotnet.defaultSolution": "Slox.slnx"
+    "dotnet.defaultSolution": "Slox.slnx",
+    "cSpell.words": [
+        "slox"
+    ]
 }

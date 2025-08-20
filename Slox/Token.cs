@@ -7,7 +7,7 @@ namespace CraftingInterpreters.Lox
         public object? Literal { get; }
         public int Line { get; }
 
-        internal Token(TokenType type, string lexeme, object literal, int line)
+        internal Token(TokenType type, string lexeme, object? literal, int line)
         {
             Type = type;
             Lexeme = lexeme;

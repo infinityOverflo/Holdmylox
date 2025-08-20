@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Coding Projects\\HoldmyloX\\Holdmylox\\Slox\\Slox.csproj": {}
+    "D:\\Projects_Code\\Holdmylox\\Slox\\Slox.csproj": {}
   },
   "projects": {
-    "d:\\Coding Projects\\HoldmyloX\\Holdmylox\\Slox\\Slox.csproj": {
+    "D:\\Projects_Code\\Holdmylox\\Slox\\Slox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Coding Projects\\HoldmyloX\\Holdmylox\\Slox\\Slox.csproj",
+        "projectUniqueName": "D:\\Projects_Code\\Holdmylox\\Slox\\Slox.csproj",
         "projectName": "Slox",
-        "projectPath": "d:\\Coding Projects\\HoldmyloX\\Holdmylox\\Slox\\Slox.csproj",
+        "projectPath": "D:\\Projects_Code\\Holdmylox\\Slox\\Slox.csproj",
         "packagesPath": "C:\\Users\\aldar\\.nuget\\packages\\",
-        "outputPath": "d:\\Coding Projects\\HoldmyloX\\Holdmylox\\Slox\\obj\\",
+        "outputPath": "D:\\Projects_Code\\Holdmylox\\Slox\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

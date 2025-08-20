@@ -13,7 +13,7 @@ namespace CraftingInterpreters.Lox
         {
             if (args.Length > 1)
             {
-                Console.WriteLine("Usage: cslox [script]");
+                Console.WriteLine("Usage: slox [script]");
                 // In C#, we use Environment.Exit for termination codes.
                 Environment.Exit(64);
             }
@@ -21,29 +21,15 @@ namespace CraftingInterpreters.Lox
             {
                 // The implementation for RunFile was not included in your snippet.
                 // This is where you would call its C# equivalent.
-                // RunFile(args[0]); 
+                RunFile(args[0]); 
             }
             else
             {
                 // The implementation for RunPrompt was not included in your snippet.
                 // This is where you would call its C# equivalent.
-                // RunPrompt();
+                RunPrompt();
             }
         }
-        // NOTE: The methods 'runFile' and 'runPrompt' were not provided in your Java code.
-        // You would need to convert their logic to C# as well.
-        // They would look something like this:
-        /*
-        private static void RunFile(string path) 
-        {
-            // C# logic to read and execute the script file goes here.
-        }
-
-        private static void RunPrompt()
-        {
-            // C# logic for the interactive prompt goes here.
-        }
-        */
         private static void RunFile(string path)
         {
             using (var stream = File.Open(path, FileMode.Open))
@@ -52,7 +38,7 @@ namespace CraftingInterpreters.Lox
                 {
                     byte[] bytes = File.ReadAllBytes(path);
                     string content = Encoding.Default.GetString(bytes);
-                    // Run(content);
+                    Run(content);
 
                     if (hadError) { Environment.Exit(65); }
                 }
@@ -69,7 +55,7 @@ namespace CraftingInterpreters.Lox
                 {
                     break;
                 }
-                // Run(line);
+                Run(line);
                 hadError = false;
             }
         }
