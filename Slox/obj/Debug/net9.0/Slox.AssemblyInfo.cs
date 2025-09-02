@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Slox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31df065fd6a23f7808a09009b55c24e42b1e4361")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b1a3c6feb653e709d7461fb981e2c855124c7fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Slox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Slox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

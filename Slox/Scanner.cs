@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 using static CraftingInterpreters.Lox.TokenType;
 using System.ComponentModel;
+using System.Runtime.InteropServices.Swift;
 
 namespace CraftingInterpreters.Lox
 {
@@ -51,8 +52,40 @@ namespace CraftingInterpreters.Lox
                 case '=': AddToken(Match('=') ? EqualEqual : Equal); break;
                 case '<': AddToken(Match('=') ? LessEqual : Less); break;
                 case '>': AddToken(Match('=') ? GreaterEqual : Greater); break;
+                case '/':
+                    {
+                        if (Match('/'))
+                        {
+                            while (Peek() != '\n' && !IsAtEnd()) Advance();
+                        }
+                        else
+                        {
+                            AddToken(Slash);
+                        }
+                        break;
+                    }
+                case ' ':
+                case '\r':
+                case '\t': break;
+                case '\n': this._line++; break;
+                case '"': String(); break;
                 default: Lox.Error(_line, "Unexpected character."); break;
             }
+        }
+        private void String()
+        {
+            while (Peek() != '"' && !IsAtEnd())
+            {
+                if (Peek() == '\n') this._line++;
+                Advance();
+            }
+            if (IsAtEnd())
+            {
+                Lox.Error(this._line, "Unterminated string.");
+            }
+            Advance();
+            string value = this._source[(this._start + 1)..(this._current - 1)];
+            AddToken(TokenType.String, value);
         }
         private bool Match(char expected)
         {
@@ -62,9 +95,14 @@ namespace CraftingInterpreters.Lox
             _current++;
             return true;
         }
+        private char Peek()
+        {
+            if (IsAtEnd()) return '\0';
+            return this._source![_current];
+        }
         private bool IsAtEnd()
         {
-            return _current >= _source!.Length;
+            return _current >= _source.Length;
         }
         private char Advance()
         {
